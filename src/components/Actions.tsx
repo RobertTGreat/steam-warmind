@@ -65,10 +65,10 @@ export const LaunchActions = ({ name = "", appid = 0 }) => {
   return (
     <ActionPanel.Section>
       <Action.OpenInBrowser title="View in Browser" url={`https://store.steampowered.com/app/${appid}`} />
-      <Action.OpenInBrowser icon={Icon.Binoculars} title="View on SteamDB" url={`https://steamdb.info/app/${appid}`} />
+      <Action.OpenInBrowser icon={Icon.Binoculars} title="View on Steamdb" url={`https://steamdb.info/app/${appid}`} />
       <Action
         icon={Icon.Image}
-        title="Browse SteamGridDB Images"
+        title="Browse Steamgriddb Images"
         onAction={() => {
           crossLaunchCommand({
             name: "browse",
@@ -85,7 +85,7 @@ export const LaunchActions = ({ name = "", appid = 0 }) => {
       />
       <Action
         icon={Icon.StarCircle}
-        title="View ProtonDB Score"
+        title="View Protondb Score"
         onAction={() => {
           crossLaunchCommand({
             name: "browse",
