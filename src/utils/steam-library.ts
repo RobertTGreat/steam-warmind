@@ -3,6 +3,7 @@ import { promisify } from "util";
 import { readFile, readdir } from "fs/promises";
 import { existsSync } from "fs";
 import { join } from "path";
+import { platform } from "os";
 
 const execAsync = promisify(exec);
 
@@ -25,6 +26,11 @@ export interface SteamLibraryInfo {
  * Get Steam installation path from Windows Registry
  */
 async function getSteamPath(): Promise<string | null> {
+  // Only work on Windows
+  if (platform() !== "win32") {
+    throw new Error("Steam library browsing is only supported on Windows");
+  }
+
   try {
     // Try both registry paths for Steam installation
     const registryPaths = ["HKLM:\\SOFTWARE\\WOW6432Node\\Valve\\Steam", "HKLM:\\SOFTWARE\\Valve\\Steam"];

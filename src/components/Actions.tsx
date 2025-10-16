@@ -85,7 +85,7 @@ export const LaunchActions = ({ name = "", appid = 0 }) => {
       />
       <Action
         icon={Icon.StarCircle}
-        title="View ProtonDB Scroe"
+        title="View ProtonDB Score"
         onAction={() => {
           crossLaunchCommand({
             name: "browse",

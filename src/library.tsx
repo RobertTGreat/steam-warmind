@@ -134,41 +134,6 @@ export default function SteamLibrary() {
                     title="Open Store Page"
                     onAction={() => openStorePage(game.appid, game.name)}
                   />
-                  <ActionPanel.Section>
-                    <Action
-                      icon={Icon.MagnifyingGlass}
-                      title="Search Games"
-                      onAction={() =>
-                        showToast({
-                          style: Toast.Style.Success,
-                          title: "Feature Coming Soon",
-                          message: "Search games functionality will be available soon",
-                        })
-                      }
-                    />
-                    <Action
-                      icon={Icon.Download}
-                      title="Download Game"
-                      onAction={() =>
-                        showToast({
-                          style: Toast.Style.Success,
-                          title: "Feature Coming Soon",
-                          message: "Download functionality will be available soon",
-                        })
-                      }
-                    />
-                    <Action
-                      icon={Icon.Store}
-                      title="Steam Store"
-                      onAction={() =>
-                        showToast({
-                          style: Toast.Style.Success,
-                          title: "Feature Coming Soon",
-                          message: "Steam store functionality will be available soon",
-                        })
-                      }
-                    />
-                  </ActionPanel.Section>
                 </ActionPanel>
               }
             />

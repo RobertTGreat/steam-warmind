@@ -24,6 +24,20 @@
       "subtitle": "Steam",
       "description": "Search the Steam api for game information.",
       "mode": "view"
+    },
+    {
+      "name": "library",
+      "title": "Steam Library",
+      "subtitle": "Steam",
+      "description": "Browse and launch your installed Steam games.",
+      "mode": "view"
+    },
+    {
+      "name": "steam-store",
+      "title": "Steam Store",
+      "subtitle": "Steam",
+      "description": "Browse Steam Store categories and search for games.",
+      "mode": "view"
     }
   ],
   "preferences": [
